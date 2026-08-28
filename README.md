@@ -1,20 +1,19 @@
 # FFmpeg Static Auto-Builds
 
 
-This repository provides static Windows (x86 and x86_64) and Linux (x86_64, arm64) Builds of [FFmpeg master](https://github.com/FFmpeg/FFmpeg) and [latest release branch](https://github.com/FFmpeg/FFmpeg/tree/release/7.1) **with some patches necessary for smooth integration with [yt-dlp](https://github.com/yt-dlp/yt-dlp)**
+This repository provides static Windows (x86_64, arm64) and Linux (x86_64, arm64) Builds of [FFmpeg master](https://github.com/FFmpeg/FFmpeg) and [latest release branch](https://github.com/FFmpeg/FFmpeg/tree/release/7.1) **with some patches necessary for smooth integration with [yt-dlp](https://github.com/yt-dlp/yt-dlp)**
 
 **Note**: The builds provided are only meant to be used with yt-dlp and any unrelated issues/patches will be rejected
 
 
 ## Downloads
 
-[![Linux x64 GPL master](https://img.shields.io/badge/-Linux_x64-crimson.svg?style=for-the-badge&logo=linux)](https://github.com/yt-dlp/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz "Linux x64 GPL master")
-[![Linux ARM64 GPL master](https://img.shields.io/badge/-Linux_ARM64-orangered.svg?style=for-the-badge&logo=linux)](https://github.com/yt-dlp/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linuxarm64-gpl.tar.xz "Linux ARM64 GPL master")
-[![Windows x64 GPL master](https://img.shields.io/badge/-Windows_x64-blue.svg?style=for-the-badge&logo=windows)](https://github.com/yt-dlp/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip "Windows x64 GPL master")
-[![Windows x86 GPL master](https://img.shields.io/badge/-Windows_x86-9cf.svg?style=for-the-badge&logo=windows)](https://github.com/yt-dlp/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win32-gpl.zip "Windows x86 GPL master")
-[![Windows ARM64 GPL master](https://img.shields.io/badge/-Windows_arm64-lightblue.svg?style=for-the-badge&logo=windows)](https://github.com/yt-dlp/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-winarm64-gpl.zip "Windows ARM64 GPL master")
-[![Other variants](https://img.shields.io/badge/-Other-grey.svg?style=for-the-badge)](https://github.com/yt-dlp/FFmpeg-Builds/wiki/Latest "All variants")
-[![Other versions](https://img.shields.io/badge/-Old_Versions-lightgrey.svg?style=for-the-badge)](https://github.com/yt-dlp/FFmpeg-Builds/releases "All releases")
+[![Linux x64 GPL master](https://img.shields.io/badge/-Linux_x64-crimson.svg?style=for-the-badge&logo=linux)](https://github.com/sabpprook/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-nonfree.tar.xz "Linux x64 Non-Free master")
+[![Linux ARM64 GPL master](https://img.shields.io/badge/-Linux_ARM64-orangered.svg?style=for-the-badge&logo=linux)](https://github.com/sabpprook/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linuxarm64-nonfree.tar.xz "Linux ARM64 Non-Free master")
+[![Windows x64 GPL master](https://img.shields.io/badge/-Windows_x64-blue.svg?style=for-the-badge&logo=windows)](https://github.com/sabpprook/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-nonfree.zip "Windows x64 Non-Free master")
+[![Windows ARM64 GPL master](https://img.shields.io/badge/-Windows_arm64-lightblue.svg?style=for-the-badge&logo=windows)](https://github.com/sabpprook/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-winarm64-nonfree.zip "Windows ARM64 Non-Free master")
+[![Other variants](https://img.shields.io/badge/-Other-grey.svg?style=for-the-badge)](https://github.com/sabpprook/FFmpeg-Builds/wiki/Latest "All variants")
+[![Other versions](https://img.shields.io/badge/-Old_Versions-lightgrey.svg?style=for-the-badge)](https://github.com/sabpprook/FFmpeg-Builds/releases "All releases")
 
 ---
 
