@@ -12,27 +12,23 @@ shift
 REPO="${GITHUB_REPOSITORY:-BtbN/FFmpeg-Builds}"
 DL_BASE="https://github.com/${REPO}/releases/download/${TAGNAME}"
 
-TARGETS=(win64 winarm64 win32 linux64 linuxarm64 linux32)
-VARIANTS=(gpl gpl-shared lgpl lgpl-shared)
+TARGETS=(win64 winarm64 linux64 linuxarm64)
+VARIANTS=(nonfree nonfree-shared)
 
 target_name() {
     case "$1" in
         win64)       echo "Windows (x86_64)" ;;
         winarm64)    echo "Windows (arm64)" ;;
-        win32)       echo "Windows (x86)" ;;
         linux64)     echo "Linux (x86_64)" ;;
         linuxarm64)  echo "Linux (arm64)" ;;
-        linux32)     echo "Linux (x86)" ;;
         *)           echo "$1" ;;
     esac
 }
 
 variant_name() {
     case "$1" in
-        gpl)            echo "GPL, static" ;;
-        lgpl)           echo "LGPL, static" ;;
-        gpl-shared)     echo "GPL, shared" ;;
-        lgpl-shared)    echo "LGPL, shared" ;;
+        nonfree)            echo "Non-Free, static" ;;
+        nonfree-shared)     echo "Non-Free, shared" ;;
         *)              echo "$1" ;;
     esac
 }
