@@ -930,7 +930,7 @@ CT_GMP_V_6_3=y
 # CT_GMP_V_6_2 is not set
 # CT_GMP_V_6_1 is not set
 CT_GMP_VERSION="6.3.0"
-CT_GMP_MIRRORS="https://gmplib.org/download/gmp https://gmplib.org/download/gmp/archive $(CT_Mirrors GNU gmp)"
+CT_GMP_MIRRORS="$(CT_Mirrors GNU gmp)"
 CT_GMP_ARCHIVE_FILENAME="@{pkg_name}-@{version}"
 CT_GMP_ARCHIVE_DIRNAME="@{pkg_name}-@{version}"
 CT_GMP_ARCHIVE_FORMATS=".tar.xz .tar.lz .tar.bz2"
@@ -1014,7 +1014,7 @@ CT_MPC_PATCH_GLOBAL=y
 CT_MPC_PATCH_ORDER="global"
 CT_MPC_V_1_3=y
 CT_MPC_VERSION="1.3.1"
-CT_MPC_MIRRORS="https://www.multiprecision.org/downloads $(CT_Mirrors GNU mpc)"
+CT_MPC_MIRRORS="$(CT_Mirrors GNU mpc)"
 CT_MPC_ARCHIVE_FILENAME="@{pkg_name}-@{version}"
 CT_MPC_ARCHIVE_DIRNAME="@{pkg_name}-@{version}"
 CT_MPC_ARCHIVE_FORMATS=".tar.gz"
@@ -1035,7 +1035,7 @@ CT_MPFR_PATCH_GLOBAL=y
 CT_MPFR_PATCH_ORDER="global"
 CT_MPFR_V_4_2=y
 CT_MPFR_VERSION="4.2.2"
-CT_MPFR_MIRRORS="https://www.mpfr.org/mpfr-${CT_MPFR_VERSION} $(CT_Mirrors GNU mpfr)"
+CT_MPFR_MIRRORS="$(CT_Mirrors GNU mpfr)"
 CT_MPFR_ARCHIVE_FILENAME="@{pkg_name}-@{version}"
 CT_MPFR_ARCHIVE_DIRNAME="@{pkg_name}-@{version}"
 CT_MPFR_ARCHIVE_FORMATS=".tar.xz .tar.bz2 .tar.gz .zip"
@@ -1060,7 +1060,7 @@ CT_NCURSES_V_6_5=y
 # CT_NCURSES_V_6_1 is not set
 # CT_NCURSES_V_6_0 is not set
 CT_NCURSES_VERSION="6.5"
-CT_NCURSES_MIRRORS="https://invisible-mirror.net/archives/ncurses $(CT_Mirrors GNU ncurses)"
+CT_NCURSES_MIRRORS="$(CT_Mirrors GNU ncurses)"
 CT_NCURSES_ARCHIVE_FILENAME="@{pkg_name}-@{version}"
 CT_NCURSES_ARCHIVE_DIRNAME="@{pkg_name}-@{version}"
 CT_NCURSES_ARCHIVE_FORMATS=".tar.gz"
