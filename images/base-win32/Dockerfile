@@ -1,9 +1,9 @@
-ARG GH_REPO=ghcr.io/yt-dlp/ffmpeg-builds
+ARG GH_REPO=ghcr.io/sabpprook/ffmpeg-builds
 ARG BASE_TAG_SUFFIX=
 FROM $GH_REPO/base:latest${BASE_TAG_SUFFIX}
 
 RUN --mount=src=ct-ng-config,dst=/.config \
-    git clone --filter=blob:none https://github.com/crosstool-ng/crosstool-ng.git /ct-ng && cd /ct-ng && \
+    git clone --filter=blob:none https://github.com/sabpprook/crosstool-ng.git /ct-ng && cd /ct-ng && \
     ./bootstrap && \
     ./configure --enable-local && \
     make -j$(nproc) && \
