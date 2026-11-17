@@ -14,7 +14,7 @@ on:
         default: false
         required: false
   schedule:
-    - cron: '42 13 * * *'
+    - cron: '30 16 */5 * *'
 
 permissions:
   contents: write
@@ -179,7 +179,7 @@ jobs:
       fail-fast: false
       matrix:
         runner: [ubuntu-latest]
-        target: [win32,win64,winarm64,linux64,linuxarm64]
+        target: [win64,winarm64,linux64,linuxarm64]
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -275,13 +275,21 @@ jobs:
       fail-fast: false
       matrix:
         runner: [ubuntu-latest]
-        target: [win32,win64,winarm64]
-        variant: [gpl,gpl-shared]
+        target: [win64,winarm64]
+        variant: [nonfree,nonfree-shared]
         include:
           - target: linux64
-            variant: gpl
+            variant: nonfree
           - target: linuxarm64
-            variant: gpl
+            variant: nonfree
+          - target: win64
+            variant: nonfree 9.0
+          - target: win64
+            variant: nonfree-shared 9.0
+          - target: win64
+            variant: nonfree 8.1
+          - target: win64
+            variant: nonfree-shared 8.1
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -383,13 +391,21 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [win32,win64,winarm64]
-        variant: [gpl,gpl-shared]
+        target: [win64,winarm64]
+        variant: [nonfree,nonfree-shared]
         include:
           - target: linux64
-            variant: gpl
+            variant: nonfree
           - target: linuxarm64
-            variant: gpl
+            variant: nonfree
+          - target: win64
+            variant: nonfree 9.0
+          - target: win64
+            variant: nonfree-shared 9.0
+          - target: win64
+            variant: nonfree 8.1
+          - target: win64
+            variant: nonfree-shared 8.1
     steps:
       - name: Checkout
         uses: actions/checkout@v7
